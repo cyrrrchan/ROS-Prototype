@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -108,6 +108,22 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &486102725 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1249720606933588, guid: d9ea5d01ed3d54c4193d2601937763fa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1012026775}
+--- !u!75 &486102732
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486102725}
+  m_Enabled: 0
+  m_Force: {x: 0, y: 20, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &524046057
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +414,31 @@ Prefab:
         type: 2}
       propertyPath: fireRate
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371716868900856, guid: d9ea5d01ed3d54c4193d2601937763fa,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 54441212173255828, guid: d9ea5d01ed3d54c4193d2601937763fa,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371716868900856, guid: d9ea5d01ed3d54c4193d2601937763fa,
+        type: 2}
+      propertyPath: jumpSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371716868900856, guid: d9ea5d01ed3d54c4193d2601937763fa,
+        type: 2}
+      propertyPath: boundary.xMin
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371716868900856, guid: d9ea5d01ed3d54c4193d2601937763fa,
+        type: 2}
+      propertyPath: boundary.xMax
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9ea5d01ed3d54c4193d2601937763fa, type: 2}

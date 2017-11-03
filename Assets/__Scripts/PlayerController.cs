@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     //private CharacterController cc;
     //private Vector3 moveVector;
 
-    public float moveForce = 365f;          // Amount of force added to move the player left and right.
+    //public float moveForce = 365f;          // Amount of force added to move the player left and right.
     public float jumpSpeed;         // Amount of force added when the player jumps.
 
     public GameObject shot_fire1;
@@ -52,8 +52,10 @@ public class PlayerController : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
-        rb.velocity = movement * moveSpeed;
-        //rb.AddForce(transform.position.x * (moveHorizontal * moveForce), 1.0f, 0.0f);
+        //rb.velocity = movement * moveSpeed;
+		//rb.AddForceAtPosition((moveHorizontal * moveForce), 1.0f, 0.0f);
+		//rb.AddForceAtPosition(new Vector3(1,0,0),transform.position-new Vector3(.5f,0,0));
+		rb.AddForce (movement * moveSpeed);
 
         rb.position = new Vector3(
             Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
@@ -72,7 +74,8 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetButtonDown("Jump"))
             {
                 //rb.velocity = new Vector3(0.0f, jumpSpeed, 0.0f);
-                rb.AddForce(0.0f, jumpSpeed, 0.0f);
+				rb.AddForce(0.0f, jumpSpeed, 0.0f,ForceMode.Impulse);
+				//rb.AddExplosionForce (jumpSpeed, transform.position - new Vector3 (0, .5f, 0), 100);
                 grounded = false;
             }
         }
