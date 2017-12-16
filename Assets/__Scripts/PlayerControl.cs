@@ -1,17 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[System.Serializable]
-public class Boundary
-{
-
-    public float xMin, xMax;
-}
 
 public class PlayerControl : MonoBehaviour
 {
-    public Boundary _boundary;
-
     [HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
@@ -87,7 +79,7 @@ public class PlayerControl : MonoBehaviour
 		if(jump)
 		{
 			// Set the Jump animator trigger parameter.
-			anim.SetTrigger("Jump");
+			//anim.SetTrigger("Jump");
 
 			// Play a random jump audio clip.
 			//int i = Random.Range(0, jumpClips.Length);
