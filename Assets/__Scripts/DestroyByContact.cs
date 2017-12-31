@@ -6,7 +6,7 @@ public class DestroyByContact : MonoBehaviour {
 
 
 	private GameController gameController;
-	private PlayerController playerController;
+	private PlayerControl playerController;
 	//public AudioClip audioClip;
 
 	// Use this for initialization
@@ -24,7 +24,7 @@ public class DestroyByContact : MonoBehaviour {
 		GameObject playerControllerObject = GameObject.FindWithTag ("Player");
 		if (playerControllerObject != null)
 		{
-			playerController = playerControllerObject.GetComponent <PlayerController>();
+			playerController = playerControllerObject.GetComponent <PlayerControl>();
 		}
 		if (playerController == null)
 		{
