@@ -15,7 +15,7 @@ public class PlayerControl : MonoBehaviour
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
 	//public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
+	public float jumpForce = 700f;			// Amount of force added when the player jumps.
 	//public AudioClip[] taunts;				// Array of clips for when the player taunts.
 	//public float tauntProbability = 50f;	// Chance of a taunt happening.
 	//public float tauntDelay = 1f;			// Delay for when the taunt should happen.
@@ -49,9 +49,9 @@ public class PlayerControl : MonoBehaviour
             jump = true;
         }
 
-		if (Input.GetKeyDown (KeyCode.B))
+		if (Input.GetKeyDown (KeyCode.LeftShift))
 			_isBreathing = true;
-		else if (Input.GetKeyUp (KeyCode.B))
+		else if (Input.GetKeyUp (KeyCode.LeftShift))
 			_isBreathing = false;
 	}
 
