@@ -35,7 +35,7 @@ public class Gun : MonoBehaviour
 		// If the square button is pressed...
 		if (Input.GetButtonDown ("Fire1") && _WillieMaePlayerControl._isBreathing) {
 			// ... set the animator Shoot trigger parameter and play the audioclip.
-			_anim.SetTrigger ("Shoot");
+			_WillieMaePlayerControl.anim.SetTrigger ("Shoot");
 			_audioSource.PlayOneShot (_trumpetHit);
 			//_isFiring = true;
 
@@ -53,9 +53,9 @@ public class Gun : MonoBehaviour
 
         // If the triangle button is pressed...
 		else if (Input.GetButtonDown ("Fire2") && _WillieMaePlayerControl._isBreathing) {
-			// ... set the animator Shoot trigger parameter and play the audioclip.
-			_anim.SetTrigger ("Shoot");
-			_audioSource.PlayOneShot (_trumpetHit);
+            // ... set the animator Shoot trigger parameter and play the audioclip.
+            _WillieMaePlayerControl.anim.SetTrigger("Shoot");
+            _audioSource.PlayOneShot (_trumpetHit);
 			//_isFiring = true;
 
 			// If the player is facing right...
@@ -72,9 +72,9 @@ public class Gun : MonoBehaviour
 
         // If the circle button is pressed...
 		else if (Input.GetButtonDown ("Fire3") && _WillieMaePlayerControl._isBreathing) {
-			// ... set the animator Shoot trigger parameter and play the audioclip.
-			_anim.SetTrigger ("Shoot");
-			_audioSource.PlayOneShot (_comboHit);
+            // ... set the animator Shoot trigger parameter and play the audioclip.
+            _WillieMaePlayerControl.anim.SetTrigger("Shoot");
+            _audioSource.PlayOneShot (_comboHit);
 			//_isFiring = true;
 
 			// If the player is facing right...

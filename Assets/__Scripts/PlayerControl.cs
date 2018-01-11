@@ -24,7 +24,7 @@ public class PlayerControl : MonoBehaviour
 	//private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
-	private Animator anim;					// Reference to the player's animator component.
+	public Animator anim;					// Reference to the player's animator component.
     private Rigidbody2D _rb2d;
     private SpriteRenderer spriteRenderer;
 
@@ -33,7 +33,7 @@ public class PlayerControl : MonoBehaviour
 	{
 		// Setting up references.
 		groundCheck = transform.Find("groundCheck");
-		anim = GetComponent<Animator>();
+		//anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -60,6 +60,7 @@ public class PlayerControl : MonoBehaviour
 	{
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
+        Debug.Log(h);
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
         anim.SetFloat("Speed", Mathf.Abs(h));
