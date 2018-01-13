@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Rewired;
 
 public class BreathMeter : MonoBehaviour {
 
-	private Image _meterImage;
+    public int playerId = 0; // The Rewired player id of this character
+    private Player player; // The Rewired Player
+
+    private Image _meterImage;
 
 	PlayerControl _WillieMaePlayerControl;
 	//Gun _TrumpetGun;
@@ -16,8 +20,14 @@ public class BreathMeter : MonoBehaviour {
 	private float _meterFilled = 1f;
 	private float _segmentSize;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
+        player = ReInput.players.GetPlayer(playerId);
+    }
+
+    // Use this for initialization
+    void Start () {
 		_WillieMaePlayerControl = GameObject.Find ("WillieMae").GetComponent<PlayerControl> ();
 		//_TrumpetGun = GameObject.Find ("Trumpet").GetComponent<Gun> ();
 
@@ -29,7 +39,7 @@ public class BreathMeter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)) && _WillieMaePlayerControl._isBreathing)
+		if ((player.GetButtonDown("Shoot_Square") || player.GetButtonDown("Shoot_Triangle") || player.GetButtonDown("Shoot_Circle")) && _WillieMaePlayerControl._isBreathing)
 		{
 			_meterImage.fillAmount -= _segmentSize;
 		}

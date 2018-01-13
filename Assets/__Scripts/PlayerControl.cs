@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Rewired;
 
 
 public class PlayerControl : MonoBehaviour
 {
+    public int playerId = 0; // The Rewired player id of this character
+    private Player player; // The Rewired Player
+
     [HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
@@ -31,8 +35,11 @@ public class PlayerControl : MonoBehaviour
 
 	void Awake()
 	{
-		// Setting up references.
-		groundCheck = transform.Find("groundCheck");
+        // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
+        player = ReInput.players.GetPlayer(playerId);
+
+        // Setting up references.
+        groundCheck = transform.Find("groundCheck");
 		//anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
     }
@@ -44,14 +51,14 @@ public class PlayerControl : MonoBehaviour
 		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
         // If the jump button is pressed and the player is grounded then the player should jump.
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (player.GetButtonDown("Jump") && grounded)
         {
             jump = true;
         }
 
-		if (Input.GetKeyDown (KeyCode.LeftShift))
+		if (player.GetButton("Breathing"))
 			_isBreathing = true;
-		else if (Input.GetKeyUp (KeyCode.LeftShift))
+		else if (!player.GetButton("Breathing"))
 			_isBreathing = false;
 	}
 
@@ -59,8 +66,7 @@ public class PlayerControl : MonoBehaviour
 	void FixedUpdate ()
 	{
 		// Cache the horizontal input.
-		float h = Input.GetAxis("Horizontal");
-        Debug.Log(h);
+		float h = player.GetAxis("Move Horizontal");
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
         anim.SetFloat("Speed", Mathf.Abs(h));
