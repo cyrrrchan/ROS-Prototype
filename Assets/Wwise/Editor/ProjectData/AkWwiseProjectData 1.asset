@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c1b183a02ac46c42bce6d5cbd1e5bc6, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 1
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -142,14 +142,11 @@ MonoBehaviour:
     m_lastTimePsrt1: -318155136
     m_lastTimePart2: -1999282608
     List: []
-  ExpandedItems:
-  - /ROS-Prototype_Wwise
-  - /ROS-Prototype_Wwise/Events
-  - /ROS-Prototype_Wwise/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
-  basePath: Audio\GeneratedSoundBanks
+  basePath: Audio/GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

@@ -102,6 +102,7 @@ public class PlayerControl : MonoBehaviour
 
             // Add a vertical force to the player.
             _rb2d.AddForce(new Vector2(0f, jumpForce));
+			anim.SetTrigger ("Jump");
 
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
