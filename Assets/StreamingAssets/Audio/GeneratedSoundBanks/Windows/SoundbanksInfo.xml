@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>F:\School\USC\Rhythms\GitHub\ROS-Prototype_Wwise\</ProjectRoot>
+		<SourceFilesRoot>F:\School\USC\Rhythms\GitHub\ROS-Prototype_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\School\USC\Rhythms\GitHub\ROS-Prototype_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\School\USC\Rhythms\GitHub\ROS-Prototype_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="397135409" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\KidKwei_Level01</ObjectPath>
+			<ShortName>KidKwei_Level01</ShortName>
+			<Path>KidKwei_Level01.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="184019550" Language="SFX">
+					<ShortName>BRASS_01.wav</ShortName>
+					<Path>SFX\BRASS_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="575250598" Language="SFX">
+					<ShortName>DRUMS_01.wav</ShortName>
+					<Path>SFX\DRUMS_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="593760099" Language="SFX">
+					<ShortName>UPRIGHT BASS_01.wav</ShortName>
+					<Path>SFX\UPRIGHT BASS_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="638453974" Language="SFX">
+					<ShortName>E GUITAR_01.wav</ShortName>
+					<Path>SFX\E GUITAR_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="752230295" Language="SFX">
+					<ShortName>PIANO_01.wav</ShortName>
+					<Path>SFX\PIANO_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="870168935" Language="SFX">
+					<ShortName>ROOM_01.wav</ShortName>
+					<Path>SFX\ROOM_01_F17FB28C.wem</Path>
+				</File>
+				<File Id="1004477006" Language="SFX">
+					<ShortName>KICK_01.wav</ShortName>
+					<Path>SFX\KICK_01_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
