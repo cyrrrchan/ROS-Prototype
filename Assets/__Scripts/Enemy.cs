@@ -3,12 +3,11 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-	public float moveSpeed = 2f;		// The speed the enemy moves at.
-	public int HP = 2;					// How many times the enemy can be hit before it dies.
+	public float moveSpeed = 1f;		// The speed the enemy moves at.
+	public int HP = 1;					// How many times the enemy can be hit before it dies.
 	public Sprite deadEnemy;			// A sprite of the enemy when it's dead.
 	public Sprite damagedEnemy;			// An optional sprite of the enemy when it's damaged.
-	public AudioClip[] deathClips;		// An array of audioclips that can play when the enemy dies.
-	public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
+	//public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
 	public float deathSpinMin = -100f;			// A value to give the minimum amount of Torque when dying
 	public float deathSpinMax = 100f;			// A value to give the maximum amount of Torque when dying
 
@@ -91,8 +90,6 @@ public class Enemy : MonoBehaviour
 		}
 
 		// Play a random audioclip from the deathClips array.
-		int i = Random.Range(0, deathClips.Length);
-		AudioSource.PlayClipAtPoint(deathClips[i], transform.position);
 
 		// Create a vector that is just above the enemy.
 		Vector3 scorePos;
@@ -100,7 +97,7 @@ public class Enemy : MonoBehaviour
 		scorePos.y += 1.5f;
 
 		// Instantiate the 100 points prefab at this point.
-		Instantiate(hundredPointsUI, scorePos, Quaternion.identity);
+		//Instantiate(hundredPointsUI, scorePos, Quaternion.identity);
 	}
 
 
@@ -110,5 +107,12 @@ public class Enemy : MonoBehaviour
 		Vector3 enemyScale = transform.localScale;
 		enemyScale.x *= -1;
 		transform.localScale = enemyScale;
+	}
+
+	private void OnCollisionEnter2D (Collision2D other) {
+		if(other.gameObject.tag == "Bullet") {
+			Destroy (other.gameObject);
+			Destroy (gameObject);
+		}
 	}
 }
