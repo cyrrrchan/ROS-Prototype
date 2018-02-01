@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_COMBO_HOTANDSWEET = 1882146685U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_TRUMPETSINGLEHIT = 2916777760U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -41,6 +43,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID COMBAT_PLAYER = 1280913391U;
         static const AkUniqueID KIDKWEI_LEVEL01 = 397135409U;
     } // namespace BANKS
 

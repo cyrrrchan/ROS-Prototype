@@ -49,6 +49,25 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="1280913391" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Combat_Player</ObjectPath>
+			<ShortName>Combat_Player</ShortName>
+			<Path>Combat_Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1882146685" Name="Play_Combo_HotAndSweet" ObjectPath="\Events\Default Work Unit\Play_Combo_HotAndSweet"/>
+				<Event Id="2916777760" Name="Play_TrumpetSingleHit" ObjectPath="\Events\Default Work Unit\Play_TrumpetSingleHit"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="60203777" Language="SFX">
+					<ShortName>TrumpetHit.wav</ShortName>
+					<Path>SFX\TrumpetHit_1C9C67B2.wem</Path>
+				</File>
+				<File Id="168861208" Language="SFX">
+					<ShortName>HotAndSweet.wav</ShortName>
+					<Path>SFX\HotAndSweet_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>

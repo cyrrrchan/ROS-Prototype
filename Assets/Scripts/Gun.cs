@@ -40,7 +40,7 @@ public class Gun : MonoBehaviour
 		if (player.GetButtonDown("Shoot_Square") && _WillieMaePlayerControl._isBreathing) {
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			_WillieMaePlayerControl.anim.SetTrigger ("Shoot");
-			//AkSoundEngine.PostEvent ("Play_Trumpet01", gameObject);
+			AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
 			//_isFiring = true;
 
 			// If the player is facing right...
@@ -59,7 +59,7 @@ public class Gun : MonoBehaviour
 		else if (player.GetButtonDown("Shoot_Triangle") && _WillieMaePlayerControl._isBreathing) {
             // ... set the animator Shoot trigger parameter and play the audioclip.
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
-			//AkSoundEngine.PostEvent ("Play_Trumpet01", gameObject);
+			AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
 			//_isFiring = true;
 
 			// If the player is facing right...
@@ -78,7 +78,7 @@ public class Gun : MonoBehaviour
 		else if (player.GetButtonDown("Shoot_Circle") && _WillieMaePlayerControl._isBreathing) {
             // ... set the animator Shoot trigger parameter and play the audioclip.
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
-			//AkSoundEngine.PostEvent ("Play_Combo_HotAndSweet", gameObject);
+			AkSoundEngine.PostEvent ("Play_Combo_HotAndSweet", gameObject);
 			//_isFiring = true;
 
 			// If the player is facing right...
