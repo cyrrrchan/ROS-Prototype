@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
-    m_lastTimePsrt1: 1983873920
-    m_lastTimePart2: -1999279793
+    m_lastTimePsrt1: -1123601825
+    m_lastTimePart2: -1999280206
     List:
     - Name: Play_Combo_HotAndSweet
-      Path: Default Work Unit/Play_Combo_HotAndSweet
+      Path: Default Work Unit\Play_Combo_HotAndSweet
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -32,7 +32,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: Play_Music
-      Path: Default Work Unit/Play_Music
+      Path: Default Work Unit\Play_Music
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -44,7 +44,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: Play_TrumpetSingleHit
-      Path: Default Work Unit/Play_TrumpetSingleHit
+      Path: Default Work Unit\Play_TrumpetSingleHit
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -56,28 +56,28 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F29CB6C5-F630-4004-BA73-FE30544B7B7D}'
-    m_lastTimePsrt1: -318155136
-    m_lastTimePart2: -1999282608
+    m_lastTimePsrt1: 1926913301
+    m_lastTimePart2: -1999281409
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{00D4AC72-3B00-4B70-935C-833A910449AA}'
-    m_lastTimePsrt1: -318155136
-    m_lastTimePart2: -1999282608
+    m_lastTimePsrt1: 1926978763
+    m_lastTimePart2: -1999281409
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3D5CE264-6324-4969-9F32-0017D6EB301E}'
-    m_lastTimePsrt1: -1359556992
-    m_lastTimePart2: -1999281122
+    m_lastTimePsrt1: 1927018693
+    m_lastTimePart2: -1999281409
     List:
     - Name: MusicLevels
-      Path: Default Work Unit/MusicLevels
+      Path: Default Work Unit\MusicLevels
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -94,14 +94,14 @@ MonoBehaviour:
       ValueGuids:
       - bytes: 552087dadd63bb44b122f3b0786bf4ed
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B30C50D4-47B9-4C13-A2ED-3EE7A1100DD0}'
-    m_lastTimePsrt1: 2013873920
-    m_lastTimePart2: -1999279793
+    m_lastTimePsrt1: -1123490728
+    m_lastTimePart2: -1999280206
     List:
     - Name: Combat_Player
-      Path: Default Work Unit/Combat_Player
+      Path: Default Work Unit\Combat_Player
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -110,7 +110,7 @@ MonoBehaviour:
       ID: 1280913391
       Guid: 248c25dcb57b654dad62de1fa54ef32f
     - Name: KidKwei_Level01
-      Path: Default Work Unit/KidKwei_Level01
+      Path: Default Work Unit\KidKwei_Level01
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -119,14 +119,14 @@ MonoBehaviour:
       ID: 397135409
       Guid: eff91e1b5a0b2246b045f69d075787b0
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
-    m_lastTimePsrt1: -1669556992
-    m_lastTimePart2: -1999281122
+    m_lastTimePsrt1: 1927238565
+    m_lastTimePart2: -1999281409
     List:
     - Name: Four
-      Path: Default Work Unit/Four
+      Path: Default Work Unit\Four
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -135,7 +135,7 @@ MonoBehaviour:
       ID: -1431238567
       Guid: e101c3866a7b9646b0ae197f245df559
     - Name: One
-      Path: Default Work Unit/One
+      Path: Default Work Unit\One
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -144,7 +144,7 @@ MonoBehaviour:
       ID: 1064933119
       Guid: f759e5fe635b944ca84e4339c8af8aae
     - Name: Three
-      Path: Default Work Unit/Three
+      Path: Default Work Unit\Three
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -153,7 +153,7 @@ MonoBehaviour:
       ID: 912956111
       Guid: 25ac661d86779d439e1329cc46997d86
     - Name: Two
-      Path: Default Work Unit/Two
+      Path: Default Work Unit\Two
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -162,18 +162,18 @@ MonoBehaviour:
       ID: 678209053
       Guid: 0813528d5d518f43bc7445b44311c1fe
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8FB76491-6F6A-4C2C-8E6C-FC0A54F13C3B}'
-    m_lastTimePsrt1: -318155136
-    m_lastTimePart2: -1999282608
+    m_lastTimePsrt1: 1926680060
+    m_lastTimePart2: -1999281409
     List: []
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3BBEC3BB-E68C-480E-A3FA-36721B6D9531}'
-    m_lastTimePsrt1: -318155136
-    m_lastTimePart2: -1999282608
+    m_lastTimePsrt1: 1926705131
+    m_lastTimePart2: -1999281409
     List: []
   ExpandedItems:
   - /ROS-Prototype_Wwise

@@ -15,19 +15,18 @@ public class Enemy : MonoBehaviour
 	private SpriteRenderer ren;			// Reference to the sprite renderer.
 	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool dead = false;			// Whether or not the enemy is dead.
-
 	
 	void Awake()
 	{
 		// Setting up the references.
 		ren = transform.Find("body").GetComponent<SpriteRenderer>();
-		frontCheck = transform.Find("frontCheck").transform;
-	}
+		//frontCheck = transform.Find("frontCheck").transform;
+    }
 
 	void FixedUpdate ()
 	{
-		// Create an array of all the colliders in front of the enemy.
-		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
+        // Create an array of all the colliders in front of the enemy.
+        /*Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
 
 		// Check each of the colliders.
 		foreach(Collider2D c in frontHits)
@@ -39,10 +38,10 @@ public class Enemy : MonoBehaviour
 				Flip ();
 				break;
 			}
-		}
+		}*/
 
-		// Set the enemy's velocity to moveSpeed in the x direction.
-		GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
+        // Set the enemy's velocity to moveSpeed in the x direction.
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
 
 		// If the enemy has one hit point left and has a damagedEnemy sprite...
 		if(HP == 1 && damagedEnemy != null)
@@ -109,10 +108,10 @@ public class Enemy : MonoBehaviour
 		transform.localScale = enemyScale;
 	}
 
-	private void OnCollisionEnter2D (Collision2D other) {
+	/*private void OnCollisionEnter2D (Collision2D other) {
 		if(other.gameObject.tag == "Bullet") {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
-	}
+	}*/
 }
