@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
 	{
 		// Setting up the references.
 		ren = transform.Find("body").GetComponent<SpriteRenderer>();
+		Debug.Assert (ren != null);
 		//frontCheck = transform.Find("frontCheck").transform;
     }
 
@@ -62,6 +63,9 @@ public class Enemy : MonoBehaviour
 	
 	void Death()
 	{
+		Destroy (gameObject);
+		return;
+
 		// Find all of the sprite renderers on this object and it's children.
 		SpriteRenderer[] otherRenderers = GetComponentsInChildren<SpriteRenderer>();
 

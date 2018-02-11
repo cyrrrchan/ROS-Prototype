@@ -15,8 +15,8 @@ public class EnemyProjectile : MonoBehaviour {
 
     void Start()
     {
-        // Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
-        Destroy(gameObject, 2);
+        // Destroy the rocket after 5 seconds if it doesn't get destroyed before then.
+        Destroy(gameObject, 5);
     }
 
 

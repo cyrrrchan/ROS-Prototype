@@ -5,6 +5,8 @@ using UnityEngine;
 public class Buscker : Enemy {
 
     private PlayerControl _playerCtrl;		// Reference to the PlayerControl script.
+	private GameObject _playerCtrlTransform;
+
     private bool _cooldown = false;
 
     public Rigidbody2D rocket;              // Prefab of the rocket.
@@ -19,7 +21,8 @@ public class Buscker : Enemy {
     private void Awake()
     {
         _playerCtrl = GameObject.Find("WillieMae").GetComponent<PlayerControl>();
-        _BusckerTrigger = GameObject.Find("triggerBuscker").GetComponent<BusckerTrigger>();
+		_playerCtrlTransform = GameObject.Find ("WillieMae");
+        _BusckerTrigger = transform.Find("triggerBuscker").GetComponent<BusckerTrigger>();
     }
     // Use this for initialization
     void Start () {
@@ -28,6 +31,9 @@ public class Buscker : Enemy {
 	
 	// Update is called once per frame
 	void Update () {
+
+		bool isInFrontOfPlayer = true;
+		Vector3 busckerScale = transform.localScale;
 
         if(_BusckerTrigger._detectPlayer && !_cooldown)
         {
@@ -59,6 +65,17 @@ public class Buscker : Enemy {
                 _count = 0.0f;
             }
         }
+
+		if (gameObject.transform.localPosition.x >= _playerCtrlTransform.transform.localPosition.x) {
+			isInFrontOfPlayer = true;
+			busckerScale.x = -(Mathf.Abs(transform.localScale.x));
+			transform.localScale = busckerScale;
+		} 
+		if (gameObject.transform.localPosition.x < _playerCtrlTransform.transform.localPosition.x) {
+			isInFrontOfPlayer = false;
+			busckerScale.x = Mathf.Abs(transform.localScale.x);
+			transform.localScale = busckerScale;
+		}
     }
 }
 
