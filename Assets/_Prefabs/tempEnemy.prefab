@@ -119,10 +119,9 @@ GameObject:
   - component: {fileID: 50537748566071634}
   - component: {fileID: 58939095034064532}
   - component: {fileID: 95638878509196850}
-  - component: {fileID: 114567757014342110}
-  - component: {fileID: 114675798640025672}
+  - component: {fileID: 114163695276537316}
   m_Layer: 10
-  m_Name: buscker01
+  m_Name: tempEnemy
   m_TagString: Buscker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,24 +326,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114567757014342110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787732545461816}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef474d77e998d4890bff85103fb4c947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  HP: 1
-  deadEnemy: {fileID: 21300000, guid: bd1989b4e42a0454097f657dfb368bd8, type: 3}
-  damagedEnemy: {fileID: 0}
-  deathSpinMin: -100
-  deathSpinMax: 100
---- !u!114 &114675798640025672
+--- !u!114 &114163695276537316
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -352,17 +334,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1787732545461816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0992e7e0c85a6044a82481785e516460, type: 3}
+  m_Script: {fileID: 11500000, guid: 05261d373cc454b86bee997bbdad587f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
   HP: 1
-  deadEnemy: {fileID: 21300000, guid: bd1989b4e42a0454097f657dfb368bd8, type: 3}
+  deadEnemy: {fileID: 0}
   damagedEnemy: {fileID: 0}
   deathSpinMin: -100
   deathSpinMax: 100
-  rocket: {fileID: 50691879596036204, guid: 02459d01f0a8c4e49af41f380c2087f6, type: 2}
-  speed: 5
+  _tauntCooldown: 2
 --- !u!114 &114742780139043276
 MonoBehaviour:
   m_ObjectHideFlags: 1
