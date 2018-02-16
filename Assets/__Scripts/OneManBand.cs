@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class OneManBand : Enemy {
 
-	enum State {Idle,
+	public enum State {Idle,
 		Taunt,
 		Attack};
-    State _enemyState;
+    public State _enemyState;
 
     private float _count = 0.0f;
-    public float _tauntCooldown;
+    public float _idleDuration;
+    public float _tauntDuration;
 
     // Use this for initialization
     void Start () {
@@ -21,8 +22,10 @@ public class OneManBand : Enemy {
 	void Update () {
 		if (_enemyState == State.Idle)
         {
+            Debug.Log("Idle");
+
             _count += Time.deltaTime;
-            if (_count >= _tauntCooldown)
+            if (_count >= _idleDuration)
             {
                 _enemyState = State.Taunt;
                 _count = 0.0f;
@@ -32,6 +35,18 @@ public class OneManBand : Enemy {
         else if (_enemyState == State.Taunt)
         {
             Debug.Log("Taunt");
+
+            _count += Time.deltaTime;
+            if (_count >= _tauntDuration)
+            {
+                _enemyState = State.Idle;
+                _count = 0.0f;
+            }
+        }
+
+        else if (_enemyState == State.Attack)
+        {
+            Debug.Log("Attack");
             _enemyState = State.Idle;
         }
 	}

@@ -15,6 +15,7 @@ TagManager:
   - HealthBar
   - Trigger
   - Buscker
+  - OneManBand
   layers:
   - Default
   - TransparentFX

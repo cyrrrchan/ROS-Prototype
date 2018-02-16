@@ -5,8 +5,7 @@ public class Rocket : MonoBehaviour
 {
 	public GameObject explosion;		// Prefab of explosion effect.
 
-
-	void Start () 
+    void Start () 
 	{
 		// Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
 		Destroy(gameObject, 2);
@@ -38,17 +37,30 @@ public class Rocket : MonoBehaviour
 			Destroy (gameObject);
 		}
 		// Otherwise if it hits a bomb crate...
-		else if(col.tag == "BombPickup")
+		else if(col.tag == "OneManBand")
 		{
-			// ... find the Bomb script and call the Explode function.
-			col.gameObject.GetComponent<Bomb>().Explode();
+            // if OneManBand is taunting when attacked, enter attack state
+            if(col.gameObject.GetComponent<OneManBand>()._enemyState == OneManBand.State.Taunt)
+            {
+                // Destroy the rocket.
+                Destroy(gameObject);
 
-			// Destroy the bomb crate.
-			Destroy (col.transform.root.gameObject);
+                col.gameObject.GetComponent<OneManBand>()._enemyState = OneManBand.State.Attack;
+            }
 
-			// Destroy the rocket.
-			Destroy (gameObject);
-		}
+            // if OneManBand is not taunting, do damage on OneManBand
+            else
+            {
+                // ... find the Enemy script and call the Hurt function.
+                col.gameObject.GetComponent<OneManBand>().Hurt();
+
+                // Call the explosion instantiation.
+                OnExplode();
+
+                // Destroy the rocket.
+                Destroy(gameObject);
+            }
+        }
 
         else if(col.tag == "Trigger")
         {
