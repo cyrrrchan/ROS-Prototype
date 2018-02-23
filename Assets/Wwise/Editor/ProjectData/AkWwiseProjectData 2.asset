@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1b183a02ac46c42bce6d5cbd1e5bc6, type: 3}
+  m_Name: AkWwiseProjectData 2
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
+    m_lastTimePsrt1: -435743360
+    m_lastTimePart2: -1999277489
+    List:
+    - Name: Play_Combo_HotAndSweet
+      Path: Default Work Unit/Play_Combo_HotAndSweet
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Combo_HotAndSweet
+        ObjectType: 3
+      ID: 1882146685
+      Guid: 2ad0cfc7739f3d46b7b986254dd7d52a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Music
+      Path: Default Work Unit/Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      ID: -1362926625
+      Guid: 916b1cad3de481488bb12c5b1a353913
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_TrumpetSingleHit
+      Path: Default Work Unit/Play_TrumpetSingleHit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_TrumpetSingleHit
+        ObjectType: 3
+      ID: -1378189536
+      Guid: 556b2a25b5734444af35421b70f7fccf
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F29CB6C5-F630-4004-BA73-FE30544B7B7D}'
+    m_lastTimePsrt1: -425743360
+    m_lastTimePart2: -1999277489
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{00D4AC72-3B00-4B70-935C-833A910449AA}'
+    m_lastTimePsrt1: -275743360
+    m_lastTimePart2: -1999277489
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3D5CE264-6324-4969-9F32-0017D6EB301E}'
+    m_lastTimePsrt1: -275743360
+    m_lastTimePart2: -1999277489
+    List:
+    - Name: MusicLevels
+      Path: Default Work Unit/MusicLevels
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicLevels
+        ObjectType: 11
+      ID: -88027485
+      Guid: a8c1e66b943a5c44886fa19270901ecf
+      values:
+      - KidKwei_Level01
+      ValueIcons:
+      - ElementName: KidKwei_Level01
+        ObjectType: 10
+      valueIDs: 31ceab17
+      ValueGuids:
+      - bytes: 552087dadd63bb44b122f3b0786bf4ed
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B30C50D4-47B9-4C13-A2ED-3EE7A1100DD0}'
+    m_lastTimePsrt1: -275743360
+    m_lastTimePart2: -1999277489
+    List:
+    - Name: Combat_Player
+      Path: Default Work Unit/Combat_Player
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Player
+        ObjectType: 7
+      ID: 1280913391
+      Guid: 248c25dcb57b654dad62de1fa54ef32f
+    - Name: KidKwei_Level01
+      Path: Default Work Unit/KidKwei_Level01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KidKwei_Level01
+        ObjectType: 7
+      ID: 397135409
+      Guid: eff91e1b5a0b2246b045f69d075787b0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
+    m_lastTimePsrt1: -435743360
+    m_lastTimePart2: -1999277489
+    List:
+    - Name: Four
+      Path: Default Work Unit/Four
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Four
+        ObjectType: 13
+      ID: -1431238567
+      Guid: e101c3866a7b9646b0ae197f245df559
+    - Name: One
+      Path: Default Work Unit/One
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: One
+        ObjectType: 13
+      ID: 1064933119
+      Guid: f759e5fe635b944ca84e4339c8af8aae
+    - Name: Three
+      Path: Default Work Unit/Three
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Three
+        ObjectType: 13
+      ID: 912956111
+      Guid: 25ac661d86779d439e1329cc46997d86
+    - Name: Two
+      Path: Default Work Unit/Two
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Two
+        ObjectType: 13
+      ID: 678209053
+      Guid: 0813528d5d518f43bc7445b44311c1fe
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8FB76491-6F6A-4C2C-8E6C-FC0A54F13C3B}'
+    m_lastTimePsrt1: -275743360
+    m_lastTimePart2: -1999277489
+    List: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3BBEC3BB-E68C-480E-A3FA-36721B6D9531}'
+    m_lastTimePsrt1: -275743360
+    m_lastTimePart2: -1999277489
+    List: []
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4
