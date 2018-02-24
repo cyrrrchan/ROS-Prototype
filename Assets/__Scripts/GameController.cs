@@ -2,71 +2,59 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Rewired;
 
 public class GameController : MonoBehaviour {
 
-	public GameObject enemy;
-	public Vector3 spawnValues;
-	public int enemyCount;
-	public float spawnWait;
-	public float startWait;
-	public float waveWait;
+    public int playerId = 0; // The Rewired player id of this character
+    private Player player; // The Rewired Player
 
-	public GUIText gameOverText;
-	public GUIText restartText;
+    public Text _healthPointsText;
+	public Text _gameOverText;
 
-	private bool gameOver;
+	private bool _gameOver;
 	private bool restart;
-	private AudioSource audioSource;
+    private string _sceneName;
 
-	// Use this for initialization
-	void Start () {
-		gameOver = false;
+    PlayerControl _WillieMaePlayerControl;
+
+    // Use this for initialization
+    void Start () {
+        // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
+        player = ReInput.players.GetPlayer(playerId);
+
+        _WillieMaePlayerControl = GameObject.Find("WillieMae").GetComponent<PlayerControl>();
+
+        _gameOver = false;
 		restart = false;
-		gameOverText.text = "";
-		restartText.text = "";
+        _healthPointsText.text = "HP: " + _WillieMaePlayerControl.HP;
+		_gameOverText.text = "";
+        _sceneName = SceneManager.GetSceneByName();
 
-		audioSource = GetComponent<AudioSource> ();
-		StartCoroutine (SpawnWaves ());
-	}
+
+    }
 
 	// Update is called once per frame
 	void Update () {
-		if (restart) {
-			if (Input.GetKeyDown (KeyCode.R))
+		if (_gameOver) {
+			if (player.GetButtonDown("Jump"))
 			{
-				Application.LoadLevel (Application.loadedLevel);
-			}
+                SceneManager.LoadScene();
+            }
 		}
 	}
 
-	IEnumerator SpawnWaves ()
-	{
-		yield return new WaitForSeconds (startWait);
-		while (true)
-		{
-			for (int i = 0; i < enemyCount; i++)
-			{
-				Vector3 spawnPosition = new Vector3 (spawnValues.x, Random.Range (-spawnValues.y, spawnValues.y), spawnValues.z);
-				Quaternion spawnRotation = Quaternion.identity;
-				Instantiate (enemy, spawnPosition, spawnRotation);
-				yield return new WaitForSeconds (spawnWait);
-			}
-			yield return new WaitForSeconds (waveWait);
+    public void UpdateHP()
+    {
+        _healthPointsText.text = "HP: " + _WillieMaePlayerControl.HP;
+    }
 
-			if (gameOver) {
-				restartText.text = "Press 'R' for Restart";
-				restart = true;
-				break;
-			}
-		}
-	}
 
 	public void GameOver ()
 	{
-		audioSource.Play ();
-		gameOverText.text = "YOU DEAD!";
-		gameOver = true;
+		_gameOverText.text = "Press Jump to restart level";
+		_gameOver = true;
 	}
 
 }

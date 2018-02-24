@@ -93,16 +93,11 @@ public class PlayerControl : MonoBehaviour
 		// If the player should jump...
 		if(jump)
 		{
-			// Set the Jump animator trigger parameter.
-			//anim.SetTrigger("Jump");
-
-			// Play a random jump audio clip.
-			//int i = Random.Range(0, jumpClips.Length);
-			//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
-
             // Add a vertical force to the player.
             _rb2d.AddForce(new Vector2(0f, jumpForce));
-			anim.SetTrigger ("Jump");
+
+            // Set the Jump animator trigger parameter.
+            anim.SetTrigger ("Jump");
 
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;

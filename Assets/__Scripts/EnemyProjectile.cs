@@ -7,10 +7,12 @@ public class EnemyProjectile : MonoBehaviour {
     public GameObject explosion;        // Prefab of explosion effect.
 
     PlayerControl _WillieMaePlayerControl;
+    GameController _GameController;
 
     private void Awake()
     {
         _WillieMaePlayerControl = GameObject.Find("WillieMae").GetComponent<PlayerControl>();
+        _GameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     void Start()
@@ -34,14 +36,22 @@ public class EnemyProjectile : MonoBehaviour {
         // If it hits the player...
         if (other.tag == "Player")
         {
-            // ... find WillieMae and decrease HP by 1.
-            _WillieMaePlayerControl.HP--;
-
             // Call the explosion instantiation.
             OnExplode();
 
             // Destroy the rocket.
             Destroy(gameObject);
+
+            if (_WillieMaePlayerControl.HP >= 1)
+            {
+                // ... find WillieMae and decrease HP by 1.
+                _WillieMaePlayerControl.HP--;
+            }
+
+            else if (_WillieMaePlayerControl.HP == 0)
+            {
+                _GameController.GameOver();
+            }
         }
 
         else if (other.tag == "Trigger" || other.tag == "Enemy")
