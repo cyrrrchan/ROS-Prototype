@@ -42,15 +42,18 @@ public class EnemyProjectile : MonoBehaviour {
             // Destroy the rocket.
             Destroy(gameObject);
 
-            if (_WillieMaePlayerControl.HP >= 1)
+            if (_WillieMaePlayerControl.HP > 1)
             {
                 // ... find WillieMae and decrease HP by 1.
                 _WillieMaePlayerControl.HP--;
+                _GameController.UpdateHP();
             }
 
-            else if (_WillieMaePlayerControl.HP == 0)
+            else if (_WillieMaePlayerControl.HP == 1)
             {
+                _GameController.UpdateHP();
                 _GameController.GameOver();
+                other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
 

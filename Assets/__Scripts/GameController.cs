@@ -30,7 +30,9 @@ public class GameController : MonoBehaviour {
 		restart = false;
         _healthPointsText.text = "HP: " + _WillieMaePlayerControl.HP;
 		_gameOverText.text = "";
-        _sceneName = SceneManager.GetSceneByName();
+
+        Scene scene = SceneManager.GetActiveScene();
+        _sceneName = scene.name;
 
 
     }
@@ -40,7 +42,7 @@ public class GameController : MonoBehaviour {
 		if (_gameOver) {
 			if (player.GetButtonDown("Jump"))
 			{
-                SceneManager.LoadScene();
+                SceneManager.LoadScene(_sceneName);
             }
 		}
 	}
