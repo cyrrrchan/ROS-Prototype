@@ -14,7 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_COMBO_HOTANDSWEET = 1882146685U;
-        static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_KIDKWEI_BOURBONSTREET_MUSIC = 2012545639U;
         static const AkUniqueID PLAY_TRUMPETSINGLEHIT = 2916777760U;
     } // namespace EVENTS
 
@@ -26,6 +26,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID KIDKWEI_BOURBONSTREET = 3844720178U;
                 static const AkUniqueID KIDKWEI_LEVEL01 = 397135409U;
             } // namespace SWITCH
         } // namespace MUSICLEVELS
@@ -35,6 +36,8 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID FOUR = 2863728729U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET_BASS = 2743055908U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET_TRUMPETHIT = 3027615411U;
         static const AkUniqueID ONE = 1064933119U;
         static const AkUniqueID THREE = 912956111U;
         static const AkUniqueID TWO = 678209053U;
@@ -44,7 +47,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID COMBAT_PLAYER = 1280913391U;
-        static const AkUniqueID KIDKWEI_LEVEL01 = 397135409U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET = 3844720178U;
     } // namespace BANKS
 
     namespace BUSSES

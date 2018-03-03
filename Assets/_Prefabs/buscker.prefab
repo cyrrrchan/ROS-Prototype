@@ -181,6 +181,7 @@ MonoBehaviour:
   deathSpinMax: 100
   rocket: {fileID: 50691879596036204, guid: 02459d01f0a8c4e49af41f380c2087f6, type: 2}
   speed: 5
+  _rtpcIDBass: KidKwei_BourbonStreet_Bass
 --- !u!114 &114941513945792374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,6 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _detectPlayer: 0
+  _rtpcIDBass: KidKwei_BourbonStreet_Bass
 --- !u!212 &212657566300248466
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -6,10 +6,10 @@ public class BusckerTrigger : MonoBehaviour {
 
     public bool _detectPlayer = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    // Use this for initialization
+    void Start () {
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
-    m_lastTimePsrt1: 865929508
-    m_lastTimePart2: -1999276797
+    m_lastTimePsrt1: 1958286994
+    m_lastTimePart2: -1999273825
     List:
     - Name: Play_Combo_HotAndSweet
       Path: Default Work Unit\Play_Combo_HotAndSweet
@@ -31,15 +31,15 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
-    - Name: Play_Music
-      Path: Default Work Unit\Play_Music
+    - Name: Play_KidKwei_BourbonStreet_Music
+      Path: Default Work Unit\Play_KidKwei_BourbonStreet_Music
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Music
+      - ElementName: Play_KidKwei_BourbonStreet_Music
         ObjectType: 3
-      ID: -1362926625
-      Guid: 916b1cad3de481488bb12c5b1a353913
+      ID: 2012545639
+      Guid: 4ba3cc3538dbeb4bb803f61ae8e1710b
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -73,8 +73,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3D5CE264-6324-4969-9F32-0017D6EB301E}'
-    m_lastTimePsrt1: 1021411765
-    m_lastTimePart2: -1999276797
+    m_lastTimePsrt1: -1362095388
+    m_lastTimePart2: -1999274220
     List:
     - Name: MusicLevels
       Path: Default Work Unit\MusicLevels
@@ -86,19 +86,23 @@ MonoBehaviour:
       ID: -88027485
       Guid: a8c1e66b943a5c44886fa19270901ecf
       values:
+      - KidKwei_BourbonStreet
       - KidKwei_Level01
       ValueIcons:
+      - ElementName: KidKwei_BourbonStreet
+        ObjectType: 10
       - ElementName: KidKwei_Level01
         ObjectType: 10
-      valueIDs: 31ceab17
+      valueIDs: 32c629e531ceab17
       ValueGuids:
+      - bytes: a98172823078514db0234b4a5687d608
       - bytes: 552087dadd63bb44b122f3b0786bf4ed
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B30C50D4-47B9-4C13-A2ED-3EE7A1100DD0}'
-    m_lastTimePsrt1: 1021386803
-    m_lastTimePart2: -1999276797
+    m_lastTimePsrt1: -1847679623
+    m_lastTimePart2: -1999273828
     List:
     - Name: Combat_Player
       Path: Default Work Unit\Combat_Player
@@ -109,21 +113,21 @@ MonoBehaviour:
         ObjectType: 7
       ID: 1280913391
       Guid: 248c25dcb57b654dad62de1fa54ef32f
-    - Name: KidKwei_Level01
-      Path: Default Work Unit\KidKwei_Level01
+    - Name: KidKwei_BourbonStreet
+      Path: Default Work Unit\KidKwei_BourbonStreet
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: KidKwei_Level01
+      - ElementName: KidKwei_BourbonStreet
         ObjectType: 7
-      ID: 397135409
-      Guid: eff91e1b5a0b2246b045f69d075787b0
+      ID: -450247118
+      Guid: 302e22d251b2794b93971a0b52052a44
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
-    m_lastTimePsrt1: 865934413
-    m_lastTimePart2: -1999276797
+    m_lastTimePsrt1: -1361999778
+    m_lastTimePart2: -1999274220
     List:
     - Name: Four
       Path: Default Work Unit\Four
@@ -134,6 +138,24 @@ MonoBehaviour:
         ObjectType: 13
       ID: -1431238567
       Guid: e101c3866a7b9646b0ae197f245df559
+    - Name: KidKwei_BourbonStreet_Bass
+      Path: Default Work Unit\KidKwei_BourbonStreet_Bass
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KidKwei_BourbonStreet_Bass
+        ObjectType: 13
+      ID: -1551911388
+      Guid: 49566c39420c7044b13e23dd40875412
+    - Name: KidKwei_BourbonStreet_TrumpetHit
+      Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetHit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KidKwei_BourbonStreet_TrumpetHit
+        ObjectType: 13
+      ID: -1267351885
+      Guid: 4844444c23a97644a1654a34a36e6701
     - Name: One
       Path: Default Work Unit\One
       PathAndIcons:
@@ -179,8 +201,6 @@ MonoBehaviour:
   - /ROS-Prototype_Wwise
   - /ROS-Prototype_Wwise/Events
   - /ROS-Prototype_Wwise/Events/Default Work Unit
-  - /ROS-Prototype_Wwise/SoundBanks
-  - /ROS-Prototype_Wwise/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
