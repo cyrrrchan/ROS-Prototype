@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
-    m_lastTimePsrt1: 1958286994
-    m_lastTimePart2: -1999273825
+    m_lastTimePsrt1: -2100832870
+    m_lastTimePart2: -1999272433
     List:
     - Name: Play_Combo_HotAndSweet
       Path: Default Work Unit\Play_Combo_HotAndSweet
@@ -126,18 +126,9 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
-    m_lastTimePsrt1: -1361999778
-    m_lastTimePart2: -1999274220
+    m_lastTimePsrt1: -2100747985
+    m_lastTimePart2: -1999272433
     List:
-    - Name: Four
-      Path: Default Work Unit\Four
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Four
-        ObjectType: 13
-      ID: -1431238567
-      Guid: e101c3866a7b9646b0ae197f245df559
     - Name: KidKwei_BourbonStreet_Bass
       Path: Default Work Unit\KidKwei_BourbonStreet_Bass
       PathAndIcons:
@@ -147,6 +138,15 @@ MonoBehaviour:
         ObjectType: 13
       ID: -1551911388
       Guid: 49566c39420c7044b13e23dd40875412
+    - Name: KidKwei_BourbonStreet_TrumpetCircle
+      Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetCircle
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KidKwei_BourbonStreet_TrumpetCircle
+        ObjectType: 13
+      ID: -1220827592
+      Guid: 299ab021cfcc764f89ce8a13b64d276d
     - Name: KidKwei_BourbonStreet_TrumpetHit
       Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetHit
       PathAndIcons:
@@ -156,33 +156,24 @@ MonoBehaviour:
         ObjectType: 13
       ID: -1267351885
       Guid: 4844444c23a97644a1654a34a36e6701
-    - Name: One
-      Path: Default Work Unit\One
+    - Name: KidKwei_BourbonStreet_TrumpetSquare
+      Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetSquare
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: One
+      - ElementName: KidKwei_BourbonStreet_TrumpetSquare
         ObjectType: 13
-      ID: 1064933119
-      Guid: f759e5fe635b944ca84e4339c8af8aae
-    - Name: Three
-      Path: Default Work Unit\Three
+      ID: 873546209
+      Guid: 8ba80396b5e24641a5d06033cf3edf5b
+    - Name: KidKwei_BourbonStreet_TrumpetTriangle
+      Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetTriangle
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Three
+      - ElementName: KidKwei_BourbonStreet_TrumpetTriangle
         ObjectType: 13
-      ID: 912956111
-      Guid: 25ac661d86779d439e1329cc46997d86
-    - Name: Two
-      Path: Default Work Unit\Two
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Two
-        ObjectType: 13
-      ID: 678209053
-      Guid: 0813528d5d518f43bc7445b44311c1fe
+      ID: -2080425264
+      Guid: bb6f7a617142554280486d04af0248b0
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 

@@ -12,7 +12,9 @@ public class Gun : MonoBehaviour
 
     public AudioClip _comboHit;
 
-    public string _rtpcIDTrumpet;
+    public string _rtpcIDTrumpetSquare;
+    public string _rtpcIDTrumpetTriangle;
+    public string _rtpcIDTrumpetCircle;
     public float _comboCooldownDuration;
 
 
@@ -30,7 +32,9 @@ public class Gun : MonoBehaviour
         // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
         player = ReInput.players.GetPlayer(playerId);
 
-        AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 0.0f);
+        AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
+        AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
+        AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
 
         // Setting up the references.
         _anim = transform.root.gameObject.GetComponent<Animator>();
@@ -53,7 +57,9 @@ public class Gun : MonoBehaviour
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
             _comboBuilding = true;
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
             _count = 0.0f;
             //_isFiring = true;
 
@@ -80,7 +86,9 @@ public class Gun : MonoBehaviour
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
             _comboBuilding = true;
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
             _count = 0.0f;
             //_isFiring = true;
 
@@ -107,7 +115,9 @@ public class Gun : MonoBehaviour
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_Combo_HotAndSweet", gameObject);
             _comboBuilding = true;
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 100f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
             _count = 0.0f;
             //_isFiring = true;
 
@@ -128,27 +138,17 @@ public class Gun : MonoBehaviour
 
         if (buttonPressed)
         {
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
+            //AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
             _count = 0.0f;
         }
    
-    _count += Time.deltaTime;
+        _count += Time.deltaTime;
         if (_count >= _comboCooldownDuration)
         {
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
+            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
             _comboBuilding = false;
-        }
-    }
-
-    private void ComboCooldown()
-    {
-
-        if (_count >= _comboCooldownDuration)
-        {
-            Debug.Log("combo ended");
-            AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 0.0f);
-            _comboBuilding = false;
-            _count = 0.0f;
         }
     }
 }

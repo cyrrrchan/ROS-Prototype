@@ -35,12 +35,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID FOUR = 2863728729U;
         static const AkUniqueID KIDKWEI_BOURBONSTREET_BASS = 2743055908U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET_TRUMPETCIRCLE = 3074139704U;
         static const AkUniqueID KIDKWEI_BOURBONSTREET_TRUMPETHIT = 3027615411U;
-        static const AkUniqueID ONE = 1064933119U;
-        static const AkUniqueID THREE = 912956111U;
-        static const AkUniqueID TWO = 678209053U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET_TRUMPETSQUARE = 873546209U;
+        static const AkUniqueID KIDKWEI_BOURBONSTREET_TRUMPETTRIANGLE = 2214542032U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
