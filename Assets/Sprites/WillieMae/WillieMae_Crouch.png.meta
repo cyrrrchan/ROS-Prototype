@@ -1,9 +1,32 @@
 fileFormatVersion: 2
-guid: 0b487c526e4f32341950c1e27cb59759
-timeCreated: 1521938781
+guid: 560de46ab8744ae4b8e459491e5c7b90
+timeCreated: 1521959717
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: WillieMae_Crouch_0
+    21300002: WillieMae_Crouch_1
+    21300004: WillieMae_Crouch_2
+    21300006: WillieMae_Crouch_3
+    21300008: WillieMae_Crouch_4
+    21300010: WillieMae_Crouch_5
+    21300012: WillieMae_Crouch_6
+    21300014: WillieMae_Crouch_7
+    21300016: WillieMae_Crouch_8
+    21300018: WillieMae_Crouch_9
+    21300020: WillieMae_Crouch_10
+    21300022: WillieMae_Crouch_11
+    21300024: WillieMae_Crouch_12
+    21300026: WillieMae_Crouch_13
+    21300028: WillieMae_Crouch_14
+    21300030: WillieMae_Crouch_15
+    21300032: WillieMae_Crouch_16
+    21300034: WillieMae_Crouch_17
+    21300036: WillieMae_Crouch_18
+    21300038: WillieMae_Crouch_19
+    21300040: WillieMae_Crouch_20
+    21300042: WillieMae_Crouch_21
+    21300044: WillieMae_Crouch_22
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,7 +131,329 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WillieMae_Crouch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1803
+        width: 468
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_1
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1793
+        width: 480
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_2
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1784
+        width: 488
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_3
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1784
+        width: 494
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1774
+        width: 506
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_5
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1764
+        width: 519
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_6
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 1761
+        width: 508
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_7
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 1755
+        width: 530
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1411
+        width: 541
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1393
+        width: 526
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_10
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1389
+        width: 552
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_11
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1352
+        width: 1105
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_12
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 1331
+        width: 1165
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 965
+        width: 559
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_14
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 915
+        width: 1784
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_15
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 891
+        width: 1244
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 637
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 637
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_18
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 446
+        width: 3143
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_19
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 26
+        width: 638
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_20
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 19
+        width: 639
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_21
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 3
+        width: 638
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WillieMae_Crouch_22
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 0
+        width: 1234
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
