@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 107160935}
   - component: {fileID: 107160934}
   - component: {fileID: 107160936}
+  - component: {fileID: 107160937}
   m_Layer: 9
   m_Name: WillieMae
   m_TagString: Player
@@ -554,6 +555,21 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107160926}
   m_Enabled: 1
+--- !u!114 &107160937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107160926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc5d7d3e484dd94497cda70fdcf9eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackHitboxes:
+  - {fileID: 1844629709}
+  - {fileID: 1142519263}
+  - {fileID: 1503516248}
 --- !u!1 &126350339
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141643247}
   m_Layer: 9
-  m_Name: CrouchingHeavyAttack
+  m_Name: CrouchingHeavyAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1621,7 +1637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379515465}
   m_Layer: 9
-  m_Name: CrouchingLightAttack
+  m_Name: CrouchingLightAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,7 +1668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396319335}
   m_Layer: 9
-  m_Name: JumpingHeavyAttack
+  m_Name: JumpingHeavyAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2404,7 +2420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582726876}
   m_Layer: 9
-  m_Name: JumpingMediumAttack
+  m_Name: JumpingMediumAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3779,7 +3795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946889629}
   m_Layer: 9
-  m_Name: StandingHeavyAttack
+  m_Name: StandingHeavyAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5701,7 +5717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403456020}
   m_Layer: 9
-  m_Name: WillieMae_hitboxes
+  m_Name: WillieMae_HitBoxColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6433,7 +6449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554205025}
   m_Layer: 9
-  m_Name: JumpingLightAttack
+  m_Name: JumpingLightAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7088,7 +7104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713738663}
   m_Layer: 9
-  m_Name: StandingLightAttack
+  m_Name: StandingLightAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7795,7 +7811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872858673}
   m_Layer: 9
-  m_Name: CrouchingMediumAttack
+  m_Name: CrouchingMediumAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8404,7 +8420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135855681}
   m_Layer: 9
-  m_Name: StandingMediumAttack
+  m_Name: StandingMediumAttackColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
