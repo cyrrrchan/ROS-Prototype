@@ -126,8 +126,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
-    m_lastTimePsrt1: 1846488678
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: 234344810
+    m_lastTimePart2: -1999268254
     List:
     - Name: KidKwei_BourbonStreet_Bass
       Path: Default Work Unit\KidKwei_BourbonStreet_Bass
@@ -138,6 +138,15 @@ MonoBehaviour:
         ObjectType: 13
       ID: -1551911388
       Guid: 49566c39420c7044b13e23dd40875412
+    - Name: KidKwei_BourbonStreet_BuskerHit
+      Path: Default Work Unit\KidKwei_BourbonStreet_BuskerHit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KidKwei_BourbonStreet_BuskerHit
+        ObjectType: 13
+      ID: 125956152
+      Guid: 4615ec790c513140922c900cdb306f1d
     - Name: KidKwei_BourbonStreet_TrumpetCircle
       Path: Default Work Unit\KidKwei_BourbonStreet_TrumpetCircle
       PathAndIcons:
