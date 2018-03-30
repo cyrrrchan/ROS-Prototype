@@ -36,6 +36,7 @@ public class Trumpet : MonoBehaviour
 
     PlayerControl _WillieMaePlayerControl;
     Metronome _Metronome;
+    BreathMeter _BreathMeter;
 
 
 	void Awake()
@@ -52,8 +53,9 @@ public class Trumpet : MonoBehaviour
         _anim = transform.root.gameObject.GetComponent<Animator>();
 		_playerCtrl = transform.root.GetComponent<PlayerControl>();
 
-		_WillieMaePlayerControl = GameObject.Find ("WillieMae").GetComponent<PlayerControl> ();
+		_WillieMaePlayerControl = GameObject.Find ("WillieMae").GetComponent<PlayerControl>();
         _Metronome = GameObject.Find("MetronomeUI").GetComponent<Metronome>();
+        _BreathMeter = GameObject.Find("breathMeterUI").GetComponent<BreathMeter>();
 
         _comboCooldownDuration = (60.0f / _Metronome._bpm) * _comboCooldownDurationBeats;
         _enemyCountDuration = (60.0f / _Metronome._bpm) * 4;
@@ -66,7 +68,7 @@ public class Trumpet : MonoBehaviour
         bool buttonPressed = false;
 
         // If the square button is pressed...
-        if (player.GetButtonDown("Shoot_Square") && _WillieMaePlayerControl._isBreathing)
+        if (player.GetButtonDown("Shoot_Square") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.
@@ -93,7 +95,7 @@ public class Trumpet : MonoBehaviour
         }
 
         // If the triangle button is pressed...
-        else if (player.GetButtonDown("Shoot_Triangle") && _WillieMaePlayerControl._isBreathing)
+        else if (player.GetButtonDown("Shoot_Triangle") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.
@@ -120,7 +122,7 @@ public class Trumpet : MonoBehaviour
         }
 
         // If the circle button is pressed...
-        else if (player.GetButtonDown("Shoot_Circle") && _WillieMaePlayerControl._isBreathing)
+        else if (player.GetButtonDown("Shoot_Circle") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.

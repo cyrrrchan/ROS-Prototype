@@ -40,7 +40,6 @@ public class Metronome : MonoBehaviour {
     private IEnumerator MetronomeStart()
     {
         SwitchColor();
-        Debug.Log("Tick");
         _nextTime += _bpmInSeconds;
         yield return new WaitForSeconds(_nextTime - Time.time);
         StartCoroutine(MetronomeStart());
