@@ -2104,13 +2104,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerId: 0
-  rocket: {fileID: 5000000, guid: 8fde8ec1b330d4bbfb4839f4b41cadc0, type: 2}
+  rocketSquare: {fileID: 5000000, guid: 8fde8ec1b330d4bbfb4839f4b41cadc0, type: 2}
+  rocketTriangle: {fileID: 5000000, guid: 9f1c955688b614b259cf703b0b1c73d2, type: 2}
+  rocketCircle: {fileID: 5000000, guid: cccb6fdca5fce44bc94bacf40fa493e8, type: 2}
   speed: 25
   _comboHit: {fileID: 8300000, guid: 87958a7cd1da8402daa11d54c7d2533e, type: 3}
   _rtpcIDTrumpetSquare: KidKwei_BourbonStreet_TrumpetSquare
   _rtpcIDTrumpetTriangle: KidKwei_BourbonStreet_TrumpetTriangle
   _rtpcIDTrumpetCircle: KidKwei_BourbonStreet_TrumpetCircle
-  _comboCooldownDuration: 3
+  _rtpcIDEnemyHit: KidKwei_BourbonStreet_BuskerHit
+  _comboCooldownDurationBeats: 2
+  _squareIsHit: 0
+  _triangleIsHit: 0
+  _circleIsHit: 0
 --- !u!1 &736107658
 GameObject:
   m_ObjectHideFlags: 0

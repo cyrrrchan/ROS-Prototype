@@ -2,29 +2,40 @@
 using System.Collections;
 using Rewired;
 
-public class Gun : MonoBehaviour
+public class Trumpet : MonoBehaviour
 {
     public int playerId = 0; // The Rewired player id of this character
     private Player player; // The Rewired Player
 
-    public Rigidbody2D rocket;				// Prefab of the rocket.
-	public float speed = 20f;				// The speed the rocket will fire at.
+    public Rigidbody2D rocketSquare;				// Prefab of the rocket.
+    public Rigidbody2D rocketTriangle;
+    public Rigidbody2D rocketCircle;
+    public float speed = 20f;				// The speed the rocket will fire at.
 
     public AudioClip _comboHit;
 
     public string _rtpcIDTrumpetSquare;
     public string _rtpcIDTrumpetTriangle;
     public string _rtpcIDTrumpetCircle;
-    public float _comboCooldownDuration;
+    public string _rtpcIDEnemyHit;
+    public float _comboCooldownDurationBeats;
 
+    [HideInInspector]
+    public bool _squareIsHit = false;
+    [HideInInspector]
+    public bool _triangleIsHit = false;
+    [HideInInspector]
+    public bool _circleIsHit = false;
 
 	private PlayerControl _playerCtrl;		// Reference to the PlayerControl script.
 	private Animator _anim;					// Reference to the Animator component.
-    private AudioSource _audioSource;
-    private bool _comboBuilding = false;
     private float _count = 0.0f;
+    private float _comboCooldownDuration;
+    private float _enemyCount = 0.0f;       // Count for projectile hitting enemies.
+    private float _enemyCountDuration;
 
-	PlayerControl _WillieMaePlayerControl;
+    PlayerControl _WillieMaePlayerControl;
+    Metronome _Metronome;
 
 
 	void Awake()
@@ -35,14 +46,19 @@ public class Gun : MonoBehaviour
         AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
         AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
         AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
+        AkSoundEngine.SetRTPCValue(_rtpcIDEnemyHit, 0.0f);
 
         // Setting up the references.
         _anim = transform.root.gameObject.GetComponent<Animator>();
 		_playerCtrl = transform.root.GetComponent<PlayerControl>();
-        _audioSource = GetComponent<AudioSource>();
 
 		_WillieMaePlayerControl = GameObject.Find ("WillieMae").GetComponent<PlayerControl> ();
-	}
+        _Metronome = GameObject.Find("MetronomeUI").GetComponent<Metronome>();
+
+        _comboCooldownDuration = (60.0f / _Metronome._bpm) * _comboCooldownDurationBeats;
+        _enemyCountDuration = (60.0f / _Metronome._bpm) * 4;
+
+    }
 
 
     void Update()
@@ -56,24 +72,22 @@ public class Gun : MonoBehaviour
             // ... set the animator Shoot trigger parameter and play the audioclip.
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
-            _comboBuilding = true;
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 100f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
             _count = 0.0f;
-            //_isFiring = true;
 
             // If the player is facing right...
             if (_playerCtrl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketSquare, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(speed, 0);
             }
             else
             {
                 // Otherwise instantiate the rocket facing left and set it's velocity to the left.
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketSquare, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(-speed, 0);
             }
         }
@@ -85,24 +99,22 @@ public class Gun : MonoBehaviour
             // ... set the animator Shoot trigger parameter and play the audioclip.
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_TrumpetSingleHit", gameObject);
-            _comboBuilding = true;
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 100f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
             _count = 0.0f;
-            //_isFiring = true;
 
             // If the player is facing right...
             if (_playerCtrl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketTriangle, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(speed, 0);
             }
             else
             {
                 // Otherwise instantiate the rocket facing left and set it's velocity to the left.
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketTriangle, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(-speed, 0);
             }
         }
@@ -114,41 +126,64 @@ public class Gun : MonoBehaviour
             // ... set the animator Shoot trigger parameter and play the audioclip.
             _WillieMaePlayerControl.anim.SetTrigger("Shoot");
             //AkSoundEngine.PostEvent ("Play_Combo_HotAndSweet", gameObject);
-            _comboBuilding = true;
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 100f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
             _count = 0.0f;
-            //_isFiring = true;
 
             // If the player is facing right...
             if (_playerCtrl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketCircle, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(speed, 0);
             }
             else
             {
                 // Otherwise instantiate the rocket facing left and set it's velocity to the left.
-                Rigidbody2D bulletInstance = Instantiate(rocket, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
+                Rigidbody2D bulletInstance = Instantiate(rocketCircle, transform.position, Quaternion.Euler(new Vector3(0, 0, 180f))) as Rigidbody2D;
                 bulletInstance.velocity = new Vector2(-speed, 0);
             }
         }
 
         if (buttonPressed)
         {
-            //AkSoundEngine.SetRTPCValue(_rtpcIDTrumpet, 100f);
             _count = 0.0f;
         }
+
+        if(_squareIsHit)
+        {
+            _enemyCount = 0.0f;
+            AkSoundEngine.SetRTPCValue(_rtpcIDEnemyHit, 100.0f);
+            _squareIsHit = false;
+        }
+
+        if(_triangleIsHit)
+        {
+            _enemyCount = 0.0f;
+            AkSoundEngine.SetRTPCValue(_rtpcIDEnemyHit, 100.0f);
+            _triangleIsHit = false;
+        }
+
+        if (_circleIsHit)
+        {
+            _enemyCount = 0.0f;
+            AkSoundEngine.SetRTPCValue(_rtpcIDEnemyHit, 100.0f);
+            _circleIsHit = false;
+        }
    
-        _count += Time.deltaTime;
+        _count += Time.deltaTime; //timer for combo cooldown
         if (_count >= _comboCooldownDuration)
         {
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetSquare, 0.0f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetTriangle, 0.0f);
             AkSoundEngine.SetRTPCValue(_rtpcIDTrumpetCircle, 0.0f);
-            _comboBuilding = false;
+        }
+
+        _enemyCount += Time.deltaTime; //timer for projectile hitting enemies
+        if (_enemyCount >= _enemyCountDuration)
+        {
+            AkSoundEngine.SetRTPCValue(_rtpcIDEnemyHit, 0.0f);
         }
     }
 }

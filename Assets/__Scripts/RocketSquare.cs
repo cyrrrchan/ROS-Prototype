@@ -1,19 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rocket : MonoBehaviour 
+public class RocketSquare : MonoBehaviour 
 {
-	public GameObject explosion;		// Prefab of explosion effect.
+	public GameObject explosion;        // Prefab of explosion effect.
+
+    Trumpet _Trumpet;
 
     void Start () 
 	{
-		// Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
-		Destroy(gameObject, 2);
+        _Trumpet = GameObject.Find("Trumpet").GetComponent<Trumpet>();
+
+        // Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
+        Destroy(gameObject, 2);
 	}
 
 
 	void OnExplode()
 	{
+        _Trumpet._squareIsHit = true;
+
 		// Create a quaternion with a random rotation in the z-axis.
 		Quaternion randomRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
 
