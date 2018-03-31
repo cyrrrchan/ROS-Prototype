@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
-    m_lastTimePsrt1: 1846478631
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -235439049
+    m_lastTimePart2: -1999268186
     List:
     - Name: Play_Combo_HotAndSweet
       Path: Default Work Unit\Play_Combo_HotAndSweet
@@ -59,22 +59,22 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F29CB6C5-F630-4004-BA73-FE30544B7B7D}'
-    m_lastTimePsrt1: 1859035460
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -214318334
+    m_lastTimePart2: -1999268186
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{00D4AC72-3B00-4B70-935C-833A910449AA}'
-    m_lastTimePsrt1: 1896043870
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -121400193
+    m_lastTimePart2: -1999268186
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3D5CE264-6324-4969-9F32-0017D6EB301E}'
-    m_lastTimePsrt1: 1896470024
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -119546593
+    m_lastTimePart2: -1999268186
     List:
     - Name: MusicLevels
       Path: Default Work Unit\MusicLevels
@@ -101,8 +101,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B30C50D4-47B9-4C13-A2ED-3EE7A1100DD0}'
-    m_lastTimePsrt1: 1896033846
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -121420244
+    m_lastTimePart2: -1999268186
     List:
     - Name: Combat_Player
       Path: Default Work Unit\Combat_Player
@@ -126,8 +126,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{63348090-DABD-4D51-8AD9-515DF9484439}'
-    m_lastTimePsrt1: 234344810
-    m_lastTimePart2: -1999268254
+    m_lastTimePsrt1: -235429023
+    m_lastTimePart2: -1999268186
     List:
     - Name: KidKwei_BourbonStreet_Bass
       Path: Default Work Unit\KidKwei_BourbonStreet_Bass
@@ -187,15 +187,15 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8FB76491-6F6A-4C2C-8E6C-FC0A54F13C3B}'
-    m_lastTimePsrt1: 1896475039
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -119536564
+    m_lastTimePart2: -1999268186
     List: []
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3BBEC3BB-E68C-480E-A3FA-36721B6D9531}'
-    m_lastTimePsrt1: 1896480051
-    m_lastTimePart2: -1999268746
+    m_lastTimePsrt1: -119496460
+    m_lastTimePart2: -1999268186
     List: []
   ExpandedItems:
   - /ROS-Prototype_Wwise
