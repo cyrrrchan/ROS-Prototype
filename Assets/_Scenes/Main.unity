@@ -127,7 +127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1188635
 Transform:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &95500262
 Transform:
   m_ObjectHideFlags: 0
@@ -3345,6 +3345,10 @@ Prefab:
       propertyPath: m_Name
       value: JumpingLightAttackWMHitbox0
       objectReference: {fileID: 0}
+    - target: {fileID: 1342315386030508, guid: 1156b912e087ed84fa35dea1e8f3e176, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1156b912e087ed84fa35dea1e8f3e176, type: 2}
   m_IsPrefabParent: 0
@@ -4213,7 +4217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &733765391
 Transform:
   m_ObjectHideFlags: 0
@@ -5502,7 +5506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &946371506
 Transform:
   m_ObjectHideFlags: 0
@@ -5731,7 +5735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &985228119
 Transform:
   m_ObjectHideFlags: 0
@@ -10051,7 +10055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1931285661
 Transform:
   m_ObjectHideFlags: 0
@@ -10433,7 +10437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2041874593
 Transform:
   m_ObjectHideFlags: 0
@@ -10542,6 +10546,10 @@ Prefab:
     - target: {fileID: 1675912895607742, guid: 63c18bc42c1ed3e4a8f10092f845ff7b, type: 2}
       propertyPath: m_Name
       value: JumpingMediumAttackWMHitbox0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675912895607742, guid: 63c18bc42c1ed3e4a8f10092f845ff7b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63c18bc42c1ed3e4a8f10092f845ff7b, type: 2}
