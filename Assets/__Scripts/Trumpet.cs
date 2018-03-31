@@ -68,7 +68,7 @@ public class Trumpet : MonoBehaviour
         bool buttonPressed = false;
 
         // If the square button is pressed...
-        if (player.GetButtonDown("Shoot_Square") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
+        if (player.GetButtonDown("Shoot_Square") && !_BreathMeter._isEmpty && !_WillieMaePlayerControl._noMoving)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.
@@ -80,7 +80,7 @@ public class Trumpet : MonoBehaviour
             _count = 0.0f;
 
             // If the player is facing right...
-            if (_playerCtrl.facingRight)
+            if (_WillieMaePlayerControl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
                 Rigidbody2D bulletInstance = Instantiate(rocketSquare, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
@@ -95,7 +95,7 @@ public class Trumpet : MonoBehaviour
         }
 
         // If the triangle button is pressed...
-        else if (player.GetButtonDown("Shoot_Triangle") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
+        else if (player.GetButtonDown("Shoot_Triangle") && !_BreathMeter._isEmpty && !_WillieMaePlayerControl._noMoving)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.
@@ -107,7 +107,7 @@ public class Trumpet : MonoBehaviour
             _count = 0.0f;
 
             // If the player is facing right...
-            if (_playerCtrl.facingRight)
+            if (_WillieMaePlayerControl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
                 Rigidbody2D bulletInstance = Instantiate(rocketTriangle, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
@@ -122,7 +122,7 @@ public class Trumpet : MonoBehaviour
         }
 
         // If the circle button is pressed...
-        else if (player.GetButtonDown("Shoot_Circle") && _WillieMaePlayerControl._isBreathing && !_BreathMeter._isEmpty)
+        else if (player.GetButtonDown("Shoot_Circle") && !_BreathMeter._isEmpty && !_WillieMaePlayerControl._noMoving)
         {
             buttonPressed = true;
             // ... set the animator Shoot trigger parameter and play the audioclip.
@@ -134,7 +134,7 @@ public class Trumpet : MonoBehaviour
             _count = 0.0f;
 
             // If the player is facing right...
-            if (_playerCtrl.facingRight)
+            if (_WillieMaePlayerControl.facingRight)
             {
                 // ... instantiate the rocket facing right and set it's velocity to the right. 
                 Rigidbody2D bulletInstance = Instantiate(rocketCircle, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;

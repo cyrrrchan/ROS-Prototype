@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_COMBO_HOTANDSWEET = 1882146685U;
         static const AkUniqueID PLAY_KIDKWEI_BOURBONSTREET_MUSIC = 2012545639U;
         static const AkUniqueID PLAY_TRUMPETSINGLEHIT = 2916777760U;
+        static const AkUniqueID STOP_KIDKWEI_BOURBONSTREET_MUSIC = 2304904085U;
     } // namespace EVENTS
 
     namespace SWITCHES

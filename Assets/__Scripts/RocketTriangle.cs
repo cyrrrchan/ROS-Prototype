@@ -4,12 +4,15 @@ using System.Collections;
 public class RocketTriangle : MonoBehaviour
 {
     public GameObject explosion;		// Prefab of explosion effect.
+    [SerializeField] int _damage;
 
     Trumpet _Trumpet;
+    BreathMeter _BreathMeter;
 
     void Start()
     {
         _Trumpet = GameObject.Find("Trumpet").GetComponent<Trumpet>();
+        _BreathMeter = GameObject.Find("breathMeterUI").GetComponent<BreathMeter>();
 
         // Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
         Destroy(gameObject, 2);
@@ -36,7 +39,8 @@ public class RocketTriangle : MonoBehaviour
         {
             // ... find the Enemy script and call the Hurt function.
             //col.gameObject.GetComponent<Enemy>().Hurt();
-            col.gameObject.GetComponent<Buscker>().Hurt();
+            col.gameObject.GetComponent<Buscker>().Hurt(_damage);
+            _BreathMeter._hitEnemy = true;
 
             // Call the explosion instantiation.
             OnExplode();
@@ -60,7 +64,7 @@ public class RocketTriangle : MonoBehaviour
             else
             {
                 // ... find the Enemy script and call the Hurt function.
-                col.gameObject.GetComponent<OneManBand>().Hurt();
+                col.gameObject.GetComponent<OneManBand>().Hurt(_damage);
 
                 // Call the explosion instantiation.
                 OnExplode();

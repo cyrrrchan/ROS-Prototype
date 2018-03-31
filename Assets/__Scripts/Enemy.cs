@@ -4,7 +4,7 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
 	public float moveSpeed = 1f;		// The speed the enemy moves at.
-	public int HP = 1;					// How many times the enemy can be hit before it dies.
+	public int HP;					// How many times the enemy can be hit before it dies.
 	public Sprite deadEnemy;			// A sprite of the enemy when it's dead.
 	public Sprite damagedEnemy;			// An optional sprite of the enemy when it's damaged.
 	//public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
@@ -55,10 +55,10 @@ public class Enemy : MonoBehaviour
 			Death ();
 	}
 	
-	public void Hurt()
+	public void Hurt (int damage)
 	{
-		// Reduce the number of hit points by one.
-		HP--;
+		// Reduce the number of hit points based on which projectile.
+		HP -= damage;
 	}
 	
 	void Death()

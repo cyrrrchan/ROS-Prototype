@@ -11,13 +11,18 @@ public class BreathMeter : MonoBehaviour {
 
     [HideInInspector]
     public bool _isEmpty = false;
+    [HideInInspector]
+    public bool _hitEnemy = false;
 
     private Image _meterImage;
 
 	PlayerControl _WillieMaePlayerControl;
 
 	[SerializeField] int _segments;
-	[SerializeField] float _time;
+    [SerializeField] int _squareSegmentSize;
+    [SerializeField] int _triangleSegmentSize;
+    [SerializeField] int _circleSegmentSize;
+    [SerializeField] float _time;
     [SerializeField] float _emptyCooldownDuration;
 
 	private float _meterFilled = 1.0f;
@@ -42,12 +47,22 @@ public class BreathMeter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if ((player.GetButtonDown("Shoot_Square") || player.GetButtonDown("Shoot_Triangle") || player.GetButtonDown("Shoot_Circle")) && _WillieMaePlayerControl._isBreathing && !_isEmpty)
+		if (player.GetButtonDown("Shoot_Square") && !_isEmpty && !_WillieMaePlayerControl._noMoving)
 		{
-			_meterImage.fillAmount -= _segmentSize;
+			_meterImage.fillAmount -= (_segmentSize * _squareSegmentSize);
 		}
 
-		else if (!_WillieMaePlayerControl._isBreathing && _meterImage.fillAmount != 1f && !_isEmpty) //fill meter when LShift or L2 is not held
+        else if (player.GetButtonDown("Shoot_Triangle") && !_isEmpty && !_WillieMaePlayerControl._noMoving)
+        {
+            _meterImage.fillAmount -= (_segmentSize * _triangleSegmentSize);
+        }
+
+        else if (player.GetButtonDown("Shoot_Circle") && !_isEmpty && !_WillieMaePlayerControl._noMoving)
+        {
+            _meterImage.fillAmount -= (_segmentSize * _circleSegmentSize);
+        }
+
+        else if (_meterImage.fillAmount != 1f && !_isEmpty) //fill meter when LShift or L2 is not held
 		{
 			_meterImage.fillAmount += Time.deltaTime / _time;
 		}
@@ -64,6 +79,12 @@ public class BreathMeter : MonoBehaviour {
         {
             Debug.Log("Not Empty Anymore");
             _isEmpty = false;
+        }
+
+        if (_hitEnemy)
+        {
+            _meterImage.fillAmount += _segmentSize;
+            _hitEnemy = false;
         }
 	}
 }

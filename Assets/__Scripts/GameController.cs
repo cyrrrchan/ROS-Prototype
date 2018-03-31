@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour {
 
 	private bool _gameOver;
 	private bool restart;
+    private bool _controlsOpen = false;
     private string _sceneName;
 
     PlayerControl _WillieMaePlayerControl;
@@ -23,6 +24,8 @@ public class GameController : MonoBehaviour {
     void Start () {
         // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
         player = ReInput.players.GetPlayer(playerId);
+
+        AkSoundEngine.PostEvent("Play_KidKwei_BourbonStreet_Music", gameObject);
 
         _WillieMaePlayerControl = GameObject.Find("WillieMae").GetComponent<PlayerControl>();
 
@@ -40,11 +43,25 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (_gameOver) {
+            _WillieMaePlayerControl._noMoving = true;
+
 			if (player.GetButtonDown("Jump"))
 			{
+                AkSoundEngine.PostEvent("Stop_KidKwei_BourbonStreet_Music", gameObject);
+                _WillieMaePlayerControl._noMoving = false;
                 SceneManager.LoadScene(_sceneName);
             }
 		}
+
+        if (player.GetButtonDown("Controls") && !_controlsOpen)
+        {
+            Debug.Log("Pause");
+        }
+
+        else if (player.GetButtonDown("Controls") && _controlsOpen)
+        {
+            Debug.Log("Unpause");
+        }
 	}
 
     public void UpdateHP()

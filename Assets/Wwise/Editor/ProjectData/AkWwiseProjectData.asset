@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B19DE86F-77C0-4D7E-B6C7-1A73DB659EE1}'
-    m_lastTimePsrt1: -235439049
-    m_lastTimePart2: -1999268186
+    m_lastTimePsrt1: -522524794
+    m_lastTimePart2: -1999268010
     List:
     - Name: Play_Combo_HotAndSweet
       Path: Default Work Unit\Play_Combo_HotAndSweet
@@ -52,6 +52,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1378189536
       Guid: 556b2a25b5734444af35421b70f7fccf
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_KidKwei_BourbonStreet_Music
+      Path: Default Work Unit\Stop_KidKwei_BourbonStreet_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_KidKwei_BourbonStreet_Music
+        ObjectType: 3
+      ID: -1990063211
+      Guid: 92ae14f260b40745a5775b59857bff59
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -101,8 +113,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B30C50D4-47B9-4C13-A2ED-3EE7A1100DD0}'
-    m_lastTimePsrt1: -121420244
-    m_lastTimePart2: -1999268186
+    m_lastTimePsrt1: -416294644
+    m_lastTimePart2: -1999268010
     List:
     - Name: Combat_Player
       Path: Default Work Unit\Combat_Player
