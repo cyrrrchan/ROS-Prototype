@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
 
     public Text _healthPointsText;
 	public Text _gameOverText;
+    [SerializeField] GameObject _controlsImage;
 
 	private bool _gameOver;
 	private bool restart;
@@ -56,11 +57,15 @@ public class GameController : MonoBehaviour {
         if (player.GetButtonDown("Controls") && !_controlsOpen)
         {
             Debug.Log("Pause");
+            _controlsImage.SetActive(true);
+            _controlsOpen = true;
         }
 
         else if (player.GetButtonDown("Controls") && _controlsOpen)
         {
             Debug.Log("Unpause");
+            _controlsImage.SetActive(false);
+            _controlsOpen = false;
         }
 	}
 
