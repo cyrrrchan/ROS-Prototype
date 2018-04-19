@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
         // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
         player = ReInput.players.GetPlayer(playerId);
 
-        //AkSoundEngine.PostEvent("Play_KidKwei_BourbonStreet_Music", gameObject);
+        AkSoundEngine.PostEvent("Play_KidKwei_BourbonStreet_Music", gameObject);
 
         _WillieMaePlayerControl = GameObject.Find("WillieMae").GetComponent<PlayerControl>();
 
@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour {
 
 			if (player.GetButtonDown("Jump"))
 			{
-                //AkSoundEngine.PostEvent("Stop_KidKwei_BourbonStreet_Music", gameObject);
+                AkSoundEngine.PostEvent("Stop_KidKwei_BourbonStreet_Music", gameObject);
                 _WillieMaePlayerControl._noMoving = false;
                 SceneManager.LoadScene(_sceneName);
             }

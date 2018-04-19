@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\</ProjectRoot>
+		<SourceFilesRoot>D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1280913391" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Combat_Player</ObjectPath>
+			<ShortName>Combat_Player</ShortName>
+			<Path>Combat_Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1882146685" Name="Play_Combo_HotAndSweet" ObjectPath="\Events\Default Work Unit\Play_Combo_HotAndSweet"/>
+				<Event Id="2916777760" Name="Play_TrumpetSingleHit" ObjectPath="\Events\Default Work Unit\Play_TrumpetSingleHit"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="60203777" Language="SFX">
+					<ShortName>TrumpetHit.wav</ShortName>
+					<Path>SFX\TrumpetHit_1C9C67B2.wem</Path>
+				</File>
+				<File Id="168861208" Language="SFX">
+					<ShortName>HotAndSweet.wav</ShortName>
+					<Path>SFX\HotAndSweet_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3844720178" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\KidKwei_BourbonStreet</ObjectPath>
+			<ShortName>KidKwei_BourbonStreet</ShortName>
+			<Path>KidKwei_BourbonStreet.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2012545639" Name="Play_KidKwei_BourbonStreet_Music" ObjectPath="\Events\Default Work Unit\Play_KidKwei_BourbonStreet_Music"/>
+				<Event Id="2304904085" Name="Stop_KidKwei_BourbonStreet_Music" ObjectPath="\Events\Default Work Unit\Stop_KidKwei_BourbonStreet_Music" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="50350147" Language="SFX">
+					<ShortName>ros_BourbonStreet_TrumpetsBacking_intro.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TrumpetsBacking_intro_F17FB28C.wem</Path>
+				</File>
+				<File Id="215835677" Language="SFX">
+					<ShortName>ros_BourbonStreet_TrumpetsHeavy_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TrumpetsHeavy_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="246986988" Language="SFX">
+					<ShortName>ros_BourbonStreet_Percussion_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Percussion_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="255764290" Language="SFX">
+					<ShortName>ros_BourbonStreet_TrumpetsMed_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TrumpetsMed_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="314659701" Language="SFX">
+					<ShortName>ros_BourbonStreet_Trombones_intro.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Trombones_intro_F17FB28C.wem</Path>
+				</File>
+				<File Id="321706788" Language="SFX">
+					<ShortName>ros_BourbonStreet_Soloists_intro.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Soloists_intro_F17FB28C.wem</Path>
+				</File>
+				<File Id="422859542" Language="SFX">
+					<ShortName>ros_BourbonStreet_TrumpetsMain_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TrumpetsMain_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="476308458" Language="SFX">
+					<ShortName>ros_BourbonStreet_Percussion_intro.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Percussion_intro_F17FB28C.wem</Path>
+				</File>
+				<File Id="752745679" Language="SFX">
+					<ShortName>ros_BourbonStreet_Soloists_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Soloists_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="810413862" Language="SFX">
+					<ShortName>ros_BourbonStreet_Trombones_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_Trombones_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="829795011" Language="SFX">
+					<ShortName>ros_BourbonStreet_TubaLowBrass_intro.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TubaLowBrass_intro_F17FB28C.wem</Path>
+				</File>
+				<File Id="904841379" Language="SFX">
+					<ShortName>ros_BourbonStreet_TubaLowBrass_loop.wav</ShortName>
+					<Path>SFX\ros_BourbonStreet_TubaLowBrass_loop_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

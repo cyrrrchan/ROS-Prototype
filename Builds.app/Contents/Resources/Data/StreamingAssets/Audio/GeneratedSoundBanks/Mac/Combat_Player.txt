@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1882146685	Play_Combo_HotAndSweet			\Default Work Unit\Play_Combo_HotAndSweet	
+	2916777760	Play_TrumpetSingleHit			\Default Work Unit\Play_TrumpetSingleHit	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	60203777	TrumpetHit	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\TrumpetHit_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TrumpetHit		94296
+	168861208	HotAndSweet	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\HotAndSweet_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\HotAndSweet		230796
+

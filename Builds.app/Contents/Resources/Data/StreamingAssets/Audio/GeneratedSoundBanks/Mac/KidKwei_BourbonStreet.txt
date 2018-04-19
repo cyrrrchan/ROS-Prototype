@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2012545639	Play_KidKwei_BourbonStreet_Music			\Default Work Unit\Play_KidKwei_BourbonStreet_Music	
+	2304904085	Stop_KidKwei_BourbonStreet_Music			\Default Work Unit\Stop_KidKwei_BourbonStreet_Music	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	125956152	KidKwei_BourbonStreet_BuskerHit			\Default Work Unit\KidKwei_BourbonStreet_BuskerHit	
+	873546209	KidKwei_BourbonStreet_TrumpetSquare			\Default Work Unit\KidKwei_BourbonStreet_TrumpetSquare	
+	2214542032	KidKwei_BourbonStreet_TrumpetTriangle			\Default Work Unit\KidKwei_BourbonStreet_TrumpetTriangle	
+	3074139704	KidKwei_BourbonStreet_TrumpetCircle			\Default Work Unit\KidKwei_BourbonStreet_TrumpetCircle	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	50350147	ros_BourbonStreet_TrumpetsBacking_intro	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TrumpetsBacking_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Intro\ros_BourbonStreet_TrumpetsBacking_intro		762876
+	215835677	ros_BourbonStreet_TrumpetsHeavy_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TrumpetsHeavy_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_TrumpetsHeavy_loop		7628172
+	246986988	ros_BourbonStreet_Percussion_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Percussion_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_Percussion_loop		7628172
+	255764290	ros_BourbonStreet_TrumpetsMed_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TrumpetsMed_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_TrumpetsMed_loop		7628172
+	314659701	ros_BourbonStreet_Trombones_intro	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Trombones_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Intro\ros_BourbonStreet_Trombones_intro		762876
+	321706788	ros_BourbonStreet_Soloists_intro	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Soloists_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Intro\ros_BourbonStreet_Soloists_intro		762876
+	422859542	ros_BourbonStreet_TrumpetsMain_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TrumpetsMain_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_TrumpetsMain_loop		7628172
+	476308458	ros_BourbonStreet_Percussion_intro	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Percussion_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Intro\ros_BourbonStreet_Percussion_intro		762876
+	752745679	ros_BourbonStreet_Soloists_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Soloists_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_Soloists_loop		7628172
+	810413862	ros_BourbonStreet_Trombones_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_Trombones_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_Trombones_loop		7628172
+	829795011	ros_BourbonStreet_TubaLowBrass_intro	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TubaLowBrass_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Intro\ros_BourbonStreet_TubaLowBrass_intro		762876
+	904841379	ros_BourbonStreet_TubaLowBrass_loop	D:\Projects\Rhapsody of Swing\GitHub\ROS-Prototype_Wwise\.cache\Mac\SFX\ros_BourbonStreet_TubaLowBrass_loop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\KidKwei\KidKwei_BourbonStreet_Loop\ros_BourbonStreet_TubaLowBrass_loop		7628172
+

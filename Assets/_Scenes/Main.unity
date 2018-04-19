@@ -474,7 +474,7 @@ Transform:
   - {fileID: 920779031}
   - {fileID: 185244076}
   m_Father: {fileID: 1471171571}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &107160929
 Rigidbody2D:
@@ -591,7 +591,7 @@ MonoBehaviour:
   facingRight: 1
   jump: 0
   _noMoving: 0
-  HP: 5
+  HP: 1
   moveForce: 365
   maxSpeed: 8
   jumpForce: 900
@@ -3022,7 +3022,7 @@ Transform:
   m_Children:
   - {fileID: 1249876894}
   m_Father: {fileID: 1471171571}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &524046063
 MonoBehaviour:
@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 566659126}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe2989a2beae71640a6aed2e57169182, type: 3}
   m_Name: 
@@ -5911,7 +5911,7 @@ MonoBehaviour:
   loadAsynchronous: 0
   decodeBank: 0
   saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
+  unloadTriggerList: 
 --- !u!114 &1088806497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8198,8 +8198,8 @@ Transform:
   m_LocalPosition: {x: -60, y: 2.25, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
-  - {fileID: 524046062}
   - {fileID: 107160928}
+  - {fileID: 524046062}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
